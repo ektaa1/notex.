@@ -1,0 +1,184 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Notex</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+
+	<nav class="pt-30 pb-30 bg-light lh-40 text-center navigation_8">
+		<div class="container px-xl-0">
+			<div class="row align-items-center">
+				<div class="col-lg-3 text-lg-left">
+					<a class="link logo color-main">Notex</a>
+				</div>
+				<div class="col-lg-6">
+					<a href="index.html" class="link mr-15 color-main">Home</a>
+					<a href="about.html" class="link mx-15 color-main">About</a>
+					<a href="causes.html" class="link mx-15 color-main">Uploads</a>
+					<a href="admin.html" class="link mx-15 color-main">Teachers</a>
+					
+					<button type="button" class=" btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@getbootstrap">upload new notes</button>
+  
+				</div>
+				<div class="mt-10 mt-lg-0 col-lg-3 text-lg-right">
+					<a href="login.html" class="btn sm border-gray color-main f-16">Login</a>
+					<a href="register.html" class="btn sm border-gray color-main f-16">Register</a>
+				</div>
+			</div>
+		</div>
+	</nav>
+	
+<br>
+<br>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">New Notes</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="recipient-name" class="col-form-label">Title:</label>
+              <input type="text" class="form-control" id="recipient-name">
+            </div>
+            <label class="my-1 mr-2" for="inlineFormCustomSelectPref">Category:</label>
+				<select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+				  
+				  <option value="1">Big Data</option>
+				  <option value="2">Cloud Computing</option>
+				  <option value="3">Agile Methodolgy</option>
+				  <option value="4">Data Structure</option>
+				  <option value="5">Theory of computation</option>
+				  <option value="6">Mathematics</option>
+				</select>
+            <div class="form-group">
+              <label for="message-text" class="col-form-label">Description:</label>
+              <textarea class="form-control" id="message-text"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlFile1">File input</label>
+                <input type="file" class="form-control-file" id="exampleFormControlFile1">
+              </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class=" btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class=" btn-primary">Done</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<hr>
+<div>
+<div class="row">
+  <br>
+  
+  <div class="col-sm-4">
+	<div class="card">
+	  <div class="card-body">
+		<h5 class="card-title">Dr. Somil Jain</h5>
+		<a href="notes.html" class="btn-primary btn-lg" style="float: right; color: white; background-color: blue;">Access Notes</a>
+	  
+	  </div>
+	</div>
+  </div>
+  <div class="col-sm-4">
+	  <div class="card">
+		<div class="card-body">
+		  <h5 class="card-title">Dr. Rajesh Yadav</h5>
+		  <a href="notes.html" class="btn-primary btn-lg" style="float: right; color: white; background-color: blue;">Access Notes</a>
+		
+		</div>
+	  </div>
+	</div>
+	<div class="col-sm-4">
+	  <div class="card">
+		<div class="card-body">
+		  <h5 class="card-title">Mr. Vikas Sharma</h5>
+		  <a href="notes.html" class="btn-primary btn-lg" style="float: right; color: white; background-color: blue;">Access Notes</a>
+		
+		</div>
+	  </div>
+	</div>
+	
+</div>
+<br>
+<div class="row">
+  
+  <div class="col-sm-4">
+	<div class="card">
+	  <div class="card-body">
+		<h5 class="card-title">Dr. Anand Sharma</h5>
+		<a href="notes.html" class="btn-primary btn-lg" style="float: right; color: white; background-color: blue;">Access Notes</a>
+	  
+	  </div>
+	</div>
+  </div>
+  <div class="col-sm-4">
+	  <div class="card">
+		<div class="card-body">
+		  <h5 class="card-title">Dr. Prateek Bhanti</h5>
+		  <a href="notes.html" class="btn-primary btn-lg" style="float: right; color: white; background-color: blue;">Access Notes</a>
+		
+		</div>
+	  </div>
+	</div>
+	<div class="col-sm-4">
+	  <div class="card">
+		<div class="card-body">
+		  <h5 class="card-title">Dr. Vinod Maan</h5>
+		  <a href="notes.html" class="btn-primary btn-lg" style="float: right; color: white; background-color: blue;">Access Notes</a>
+		
+		</div>
+	  </div>
+	</div>
+	
+</div>
+</div>
+<br>
+<br>
+<br>
+<footer class="pt-10 pb-15 bg-dark color-white text-center text-sm-left footer_9">
+  
+<div class="row justify-content-center">
+	<div class="mb-50 mb-lg-0 col-lg-4 ">
+		<div class="row no-gutters justify-content-center justify-content-sm-start">
+			<div class="col-lg-auto col-sm-4 col-auto">
+				<a href="#" class="link mr-10 color-white">Terms of Service</a>
+			</div>
+			<div class="col-lg-auto col-sm-4 col-auto">
+				<a href="#" class="link ml-10 color-white">Privacy Policy</a>
+			</div>
+		</div>
+  
+  
+	
+</div>
+</div>
+</footer>
+
+
+
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+	<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+	<script src="js/jquery.maskedinput.min.js"></script>
+	<script src="script/main.js"></script>
+</body>
+
+</html>

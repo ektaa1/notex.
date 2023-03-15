@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notex</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" href="style/style.css">
+    
+    
+</head>
+
+<body>
+
+    <nav class="pt-30 pb-30 bg-light lh-40 text-center navigation_8">
+		<div class="container px-xl-0">
+			<div class="row align-items-center">
+				<div class="col-lg-3 text-lg-left">
+					<a  class="link logo color-main">Notex</a>
+				</div>
+				<div class="col-lg-6">
+					<a href="index.html" class="link mr-15 color-main">Home</a>
+					<a href= "about.html" class="link mx-15 color-main">About</a>
+					<a href="causes.html" class="link mx-15 color-main">Uploads</a>
+					<a href="admin.html" class="link mx-15 color-main">Teachers</a>
+                    
+                    <button type="button" class=" btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@getbootstrap">upload new notes</button>
+  </div>
+				<div class="mt-10 mt-lg-0 col-lg-3 text-lg-right">
+					<a href="login.html" class="btn sm border-gray color-main f-16">Login</a>
+					<a href="register.html" class="btn sm border-gray color-main f-16">Register</a>
+				</div>
+			</div>
+		</div>
+	</nav>
+
+
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">New Notes</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="recipient-name" class="col-form-label">Title:</label>
+              <input type="text" class="form-control" id="recipient-name">
+            </div>
+            <label class="my-1 mr-2" for="inlineFormCustomSelectPref">Category:</label>
+				<select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+				  
+				  <option value="1">Big Data</option>
+				  <option value="2">Cloud Computing</option>
+				  <option value="3">Agile Methodolgy</option>
+				  <option value="4">Data Structure</option>
+				  <option value="5">Theory of computation</option>
+				  <option value="6">Mathematics</option>
+				</select>
+            <div class="form-group">
+              <label for="message-text" class="col-form-label">Description:</label>
+              <textarea class="form-control" id="message-text"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlFile1">File input</label>
+                <input type="file" class="form-control-file" id="exampleFormControlFile1">
+              </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class=" btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class=" btn-primary">Done</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- Feature 45 -->
+<section class="pt-10 pb-70 bg-light feature_45">
+    <div class="container px-xl-0">
+        <div class="row justify-content-center">
+            <div class="col-xl-8 col-lg-10 text-center">
+                <h2 class="mb-25 small">About Us</h2>
+                <div class="mb-60 f-22 color-heading text-adaptive description">It's a student resource management system which allows multiple user access, for example teacher, student, admin, to login, upload various files and download notes. 
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="row justify-content-center justify-content-lg-between no-gutters">
+            <div class="col-xl-7 col-lg-6 col-md-8">
+                <img style="height: 500px; width: 600px;"  src="images/n1.png" alt=""
+                    class="mb-50 mb-lg-0 img-fluid radius10" />
+            </div>
+            
+
+ 
+            <div class="mt-10 col-lg-5">
+                <div class="row justify-content-center text-center text-md-left">
+                    <div class="mb-45 col-lg-12 col-md-4 col-sm-8 block">
+                        <div class="mb-15 f-22 title">Features</div>
+                        <div class="color-heading text-adaptive"><li>Multiple user access: Allows multiple type of users(teacher/student/admin) to login</li>
+                            <li>Functional Admin panel: Allows admins to manage the whole system</li>
+                            <li>CRUD functionalities: Allows all users to create,read,update and delete their notes in a managed format</li>
+                            <li>Profile update option: Allows users to update their profile/account details</li>
+                            <li>Secure registration and login option for users</li>
+                            <li>Allows students and teachers to download/upload their course notes easily</li>
+
+                            
+                        </div>
+                    </div>
+                    <div class="mb-45 col-lg-12 col-md-4 col-sm-8 block">
+                        <div class="mb-15 f-22 title">Vision</div>
+                        <div class="color-heading text-adaptive">Notex aims to be readily available when user need to quickly jot down or pull up information. It creates editable, text-based documents & allow student to create and store multiple notes.
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Application 18 -->
+<section class="pt-100 pb-100 bg-light application_18 ">
+    <div class="container px-xl-0 ">
+        <div class="row ">
+            <div class="col-md-6 col-lg-6 col-xl-5 no-gutters d-flex flex-column justify-content-between ">
+                <div class="top no-gutters ">
+                    <div class="pt-30 pb-25 color-main f-32 bold text-adaptive">List of All Uploaded Notes
+                    </div>
+                    <div class="col-lg-10 color-heading f-18 medium text-adaptive">Here is a list of all notes created till now. Click on the below button to browse through various causes.
+                    </div>
+                    <br>
+                    <a href="causes.html" class="btn action-3 w-350 px-0">All Uploads</a>
+                </div>
+                
+            </div>
+            <div
+                class="mt-50 mt-md-0 col-md-6 col-lg-6 col-xl-7 d-flex justify-content-center justify-content-md-end align-items-center no-gutters">
+                <img style="height: 300px; width: 600px;" src="images/n3.jpg" alt=""
+                    class="img-fluid" />
+            </div>
+        </div>
+    </div>
+</section>
+<br>
+<br>
+<footer class="pt-10 pb-15 bg-dark color-white text-center text-sm-left footer_9">
+    
+    <div class="row justify-content-center">
+        <div class="mb-50 mb-lg-0 col-lg-4 ">
+            <div class="row no-gutters justify-content-center justify-content-sm-start">
+                <div class="col-lg-auto col-sm-4 col-auto">
+                    <a href="#" class="link mr-10 color-white">Terms of Service</a>
+                </div>
+                <div class="col-lg-auto col-sm-4 col-auto">
+                    <a href="#" class="link ml-10 color-white">Privacy Policy</a>
+                </div>
+            </div>
+      
+      
+        
+    </div>
+</div>
+</footer>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="script/main.js /main.js"></script>
+</body>
+
+</html>
